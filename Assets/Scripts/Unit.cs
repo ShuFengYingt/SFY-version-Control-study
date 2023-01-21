@@ -26,7 +26,12 @@ public abstract class Unit : MonoBehaviour,
 
     private void Start()
     {
-
+        //If the Instance is filled.
+        if (MainManager.Instance != null)
+        {
+            //Using the colour exit in TeamColour to set the colour of the ...car?
+            SetColor(MainManager.Instance.TeamColour);
+        }
     }
 
     void SetColor(Color c)
