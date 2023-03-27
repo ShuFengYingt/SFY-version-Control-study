@@ -69,6 +69,7 @@ public class MainManager : MonoBehaviour
             SaveData data = JsonUtility.FromJson<SaveData>(json);
             //Set the TeamColor to the color stored in the data.
             TeamColour = data.TeamColour;
+            Debug.Log(json);
         }
     }
 
